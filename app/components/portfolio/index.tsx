@@ -30,15 +30,135 @@ const PortfolioSection = () => {
               </svg>
             }
           />
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-[210px]">
             <PortfolioItem
               title="Snack Platform"
               description="Unmatched productivity and collaboration for freelancer teams."
               tags={["Web", "Design", "Development"]}
-              cover="https://source.unsplash.com/random/800x600"
+              cover="https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048"
               images={[
                 {
-                  src: "https://source.unsplash.com/random/800x600",
+                  src: "https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048",
+                  alt: "Project image",
+                },
+              ]}
+              content={{
+                column1: (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec purus ac neque ultrices ultricies. Nullam
+                    elementum, turpis vel fermentum aliquam, mi ligula tristique
+                    nunc, nec tincidunt arcu nulla id nunc.
+                  </p>
+                ),
+                column2: (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec purus ac neque ultrices ultricies. Nullam
+                    elementum, turpis vel fermentum aliquam, mi ligula tristique
+                    nunc, nec tincidunt arcu nulla id nunc.
+                  </p>
+                ),
+              }}
+            />
+            <PortfolioItem
+              title="Velocity Payments"
+              description="A seamless payment experience for businesses and consumers."
+              tags={["Web", "Design", "Development"]}
+              cover="https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048"
+              images={[
+                {
+                  src: "https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048",
+                  alt: "Project image",
+                },
+              ]}
+              content={{
+                column1: (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec purus ac neque ultrices ultricies. Nullam
+                    elementum, turpis vel fermentum aliquam, mi ligula tristique
+                    nunc, nec tincidunt arcu nulla id nunc.
+                  </p>
+                ),
+                column2: (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec purus ac neque ultrices ultricies. Nullam
+                    elementum, turpis vel fermentum aliquam, mi ligula tristique
+                    nunc, nec tincidunt arcu nulla id nunc.
+                  </p>
+                ),
+              }}
+            />
+            <PortfolioItem
+              title="CXMappers"
+              description="A platform for customer journey mapping and analysis."
+              tags={["Web", "Design", "Development"]}
+              cover="https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048"
+              images={[
+                {
+                  src: "https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048",
+                  alt: "Project image",
+                },
+              ]}
+              content={{
+                column1: (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec purus ac neque ultrices ultricies. Nullam
+                    elementum, turpis vel fermentum aliquam, mi ligula tristique
+                    nunc, nec tincidunt arcu nulla id nunc.
+                  </p>
+                ),
+                column2: (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec purus ac neque ultrices ultricies. Nullam
+                    elementum, turpis vel fermentum aliquam, mi ligula tristique
+                    nunc, nec tincidunt arcu nulla id nunc.
+                  </p>
+                ),
+              }}
+            />
+            <PortfolioItem
+              title="MongoDB Workbooks"
+              description="A platform for customer journey mapping and analysis."
+              tags={["Web", "Design", "Development"]}
+              cover="https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048"
+              images={[
+                {
+                  src: "https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048",
+                  alt: "Project image",
+                },
+              ]}
+              content={{
+                column1: (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec purus ac neque ultrices ultricies. Nullam
+                    elementum, turpis vel fermentum aliquam, mi ligula tristique
+                    nunc, nec tincidunt arcu nulla id nunc.
+                  </p>
+                ),
+                column2: (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec purus ac neque ultrices ultricies. Nullam
+                    elementum, turpis vel fermentum aliquam, mi ligula tristique
+                    nunc, nec tincidunt arcu nulla id nunc.
+                  </p>
+                ),
+              }}
+            />
+            <PortfolioItem
+              title="Tafara Care Services"
+              description="A platform for customer journey mapping and analysis."
+              tags={["Web", "Design", "Development"]}
+              cover="https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048"
+              images={[
+                {
+                  src: "https://framerusercontent.com/images/YIKqpQeMxqzYeT9rO3VD9QgAW70.webp?scale-down-to=2048",
                   alt: "Project image",
                 },
               ]}

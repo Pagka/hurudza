@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("./components/styles/typography.css");
-@import url("./components/styles/layout.css");
+@import "./components/styles/typography.css";
+@import "./components/styles/layout.css";
+@import "./components/styles/shadow.css";
+@import "./components/styles/patterns.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -31,4 +33,54 @@ h1,
 h2,
 h3 {
   @apply tracking-tighter text-zinc-900;
+}
+
+.py-xl {
+  padding-top: var(--max-padding-size);
+  padding-bottom: var(--max-padding-size);
+}
+
+.py-lg {
+  padding-top: calc(var(--max-padding-size) * 0.75);
+  padding-bottom: calc(var(--max-padding-size) * 0.75);
+}
+
+.py-md {
+  padding-top: calc(var(--max-padding-size) * 0.5);
+  padding-bottom: calc(var(--max-padding-size) * 0.5);
+}
+
+.py-sm {
+  padding-top: calc(var(--max-padding-size) * 0.25);
+  padding-bottom: calc(var(--max-padding-size) * 0.25);
+}
+
+.py-xs {
+  padding-top: calc(var(--max-padding-size) * 0.125);
+  padding-bottom: calc(var(--max-padding-size) * 0.125);
+}
+
+.px-xl {
+  padding-left: var(--max-padding-size);
+  padding-right: var(--max-padding-size);
+}
+
+.px-lg {
+  padding-left: calc(var(--max-padding-size) * 0.75);
+  padding-right: calc(var(--max-padding-size) * 0.75);
+}
+
+.px-md {
+  padding-left: calc(var(--max-padding-size) * 0.5);
+  padding-right: calc(var(--max-padding-size) * 0.5);
+}
+
+.px-sm {
+  padding-left: calc(var(--max-padding-size) * 0.25);
+  padding-right: calc(var(--max-padding-size) * 0.25);
+}
+
+.px-xs {
+  padding-left: calc(var(--max-padding-size) * 0.125);
+  padding-right: calc(var(--max-padding-size) * 0.125);
 }
