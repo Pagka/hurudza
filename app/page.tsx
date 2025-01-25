@@ -1,55 +1,118 @@
 import ButtonWithDisclosure from "@/components/ButtonWithDisclosure";
+import { cn } from "@/utils";
 import { PhoneIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
+import HeroSection from "./components/hero";
+import PortfolioSection from "./components/portfolio";
 
 export default function Home() {
   return (
     <>
-    
-    <div id="main-section" className="h-screen p-4 sticky top-0 left-0 flex flex-col space-y-16 justify-center items-center container mx-auto max-w-5xl">
-  <div className="space-y-12" >
-    <h1 className="text-xl font-bold text-zinc-900">Hurudza</h1>
-    <small className="text-sm italic">noun</small>
-    <ol className="text-zinc-900 list-decimal font-medium list-inside">
-      <li>
-        The product partner for companies who build things that make everyday life easier.
-      </li>
-      <li>referring to someone who has big harvests.</li>
-    </ol>
-    <div className="space-y-1">
-      <p className="text-sm text-zinc-500">
-        English translation
-      </p>
-      <p className="text-zinc-900">
-        Master farmer
-      </p>
-    </div>
-    <p className="text-balance text-zinc-900">
-      At Hurudza we are helping startups, founders and institutions realize their full potential through our 
-      unparalleled design and engineering services. We are a small team of bright-minded people who deeply care 
-      about building products that make everyday life more convenient.
-    </p>
-
-    <div>
-      <ButtonWithDisclosure backgroundColor="#0588F0" color="#fff" accentColor="#fff" text="Book an introductory call" icon={<PhoneIcon className="w-6 h-6" />}>
-        <h1 className="text-3xl font-bold mb-2">
-          Let&lsquo;s talk about your next project
-        </h1>
-        <p className="max-w-2xl text-balance">
-          We are always excited to work with new people and help them bring their ideas to life. 
-          Book a call with us to discuss your project and how we can help you.
-        </p>
-      </ButtonWithDisclosure>
-      <p className="text-sm text-zinc-500 mt-8">
-        Due to limited availability, we only partner with select startups  
-      </p>
-    </div>
-
-    
-  </div>
-  
-</div>
+      <HeroSection />
+      <PortfolioSection />
+      <div className="relative">
+        <div
+          id="about-section"
+          className="py-16 p-4 flex flex-col space-y-16 justify-center items-center container mx-auto max-w-5xl relative"
+        >
+          <div className="space-y-12 max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <h2 className="text-xl font-medium text-balance text-center text-slate-900 sm:text-2xl lg:text-3xl tracking-tighter max-w-xl mx-auto">
+                How we turn sparks into flames.
+              </h2>
+            </div>
+            <div className="flex relative gap-8">
+              <div className="h-[60vh] flex-1 sticky top-20 bg-zinc-50 rounded-xl border border-zinc-400/20 shadow-sm"></div>
+              <div className="flex-1 space-y-8">
+                <div>
+                  <h3 className="text-lg font-medium text-balance text-slate-900 sm:text-xl lg:text-2xl tracking-tighter mb-4">
+                    1. Discovery
+                  </h3>
+                  <p className="text-base text-slate-700 text-balance">
+                    Every big idea starts with a single spark. We listen,
+                    question, and illuminate the path forward.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-balance text-slate-900 sm:text-xl lg:text-2xl tracking-tighter mb-4">
+                    2. Design
+                  </h3>
+                  <p className="text-base text-slate-700 text-balance">
+                    We map out your vision with clarity—turning sparks into a
+                    blueprint for innovation.{" "}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-balance text-slate-900 sm:text-xl lg:text-2xl tracking-tighter mb-4">
+                    3. Development
+                  </h3>
+                  <p className="text-base text-slate-700 text-balance">
+                    Where the magic happens. Our code, your dream, fused
+                    seamlessly.{" "}
+                  </p>
+                </div>
+                <div>
+                  <div className="size-12 rounded-xl bg-blue-600 ring-2 ring-offset-2 ring-offset-white ring-blue-600" />
+                  <h3 className="text-lg font-medium text-balance text-slate-900 sm:text-xl lg:text-2xl tracking-tighter mb-4">
+                    4. Deliver
+                  </h3>
+                  <p className="text-base text-slate-700 text-balance">
+                    We don’t just hand it over; we stand by to see the flame
+                    burn bright. Your success, our signature.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="py-16 p-4 flex flex-col space-y-16 justify-center items-center container mx-auto max-w-5xl relative">
+          <div className="space-y-12 max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <h2 className="text-xl font-medium text-balance text-center text-slate-900 sm:text-2xl lg:text-3xl tracking-tighter max-w-xl mx-auto">
+                We&apos;ve built some cool stuff.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="py-16 p-4 flex flex-col space-y-16 justify-center items-center container mx-auto max-w-5xl relative">
+          <div className="space-y-12 max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <h2 className="text-xl font-medium text-balance text-center text-slate-900 sm:text-2xl lg:text-3xl tracking-tighter max-w-xl mx-auto">
+                Loved by the few who matter
+              </h2>
+              <div className="grid grid-cols-3 gap-8">
+                <div className="aspect-square rounded-xl bg-zinc-50 border border-zinc-400/20 shadow-sm" />
+                <div className="aspect-square rounded-xl bg-zinc-50 border border-zinc-400/20 shadow-sm" />
+                <div className="aspect-square rounded-xl bg-zinc-50 border border-zinc-400/20 shadow-sm" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="py-16 p-4 flex flex-col space-y-16 justify-center items-center container mx-auto max-w-5xl relative">
+          <div className="space-y-12 max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <h2 className="text-xl font-medium text-balance text-center text-slate-900 sm:text-2xl lg:text-3xl tracking-tighter max-w-xl mx-auto">
+                We are small but mighty
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="py-16 p-4 flex flex-col space-y-16 justify-center items-center container mx-auto max-w-5xl relative">
+          <div className="space-y-12 max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <h2 className="text-xl font-medium text-balance text-center text-slate-900 sm:text-2xl lg:text-3xl tracking-tighter max-w-xl mx-auto">
+                Ready to disrupt the status quo?
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="py-16 p-4 flex flex-col space-y-16 justify-center items-center container mx-auto max-w-5xl relative">
+          <p className="text-center font-medium text-slate-700 text-balance">
+            Built with ❤️ during late nights and powered by big dreams.
+          </p>
+        </div>
+      </div>
     </>
   );
 }

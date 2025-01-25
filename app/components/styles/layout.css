@@ -1,0 +1,57 @@
+@tailwind utilities;
+
+:root {
+  --max-padding-size: 280px;
+}
+
+@layer utilities {
+  .py-xl {
+    padding-top: var(--max-padding-size);
+    padding-bottom: var(--max-padding-size);
+  }
+
+  .py-lg {
+    padding-top: calc(var(--max-padding-size) * 0.75);
+    padding-bottom: calc(var(--max-padding-size) * 0.75);
+  }
+
+  .py-md {
+    padding-top: calc(var(--max-padding-size) * 0.5);
+    padding-bottom: calc(var(--max-padding-size) * 0.5);
+  }
+
+  .py-sm {
+    padding-top: calc(var(--max-padding-size) * 0.25);
+    padding-bottom: calc(var(--max-padding-size) * 0.25);
+  }
+
+  .py-xs {
+    padding-top: calc(var(--max-padding-size) * 0.125);
+    padding-bottom: calc(var(--max-padding-size) * 0.125);
+  }
+
+  .px-xl {
+    padding-left: var(--max-padding-size);
+    padding-right: var(--max-padding-size);
+  }
+
+  .px-lg {
+    padding-left: calc(var(--max-padding-size) * 0.75);
+    padding-right: calc(var(--max-padding-size) * 0.75);
+  }
+
+  .px-md {
+    padding-left: calc(var(--max-padding-size) * 0.5);
+    padding-right: calc(var(--max-padding-size) * 0.5);
+  }
+
+  .px-sm {
+    padding-left: calc(var(--max-padding-size) * 0.25);
+    padding-right: calc(var(--max-padding-size) * 0.25);
+  }
+
+  .px-xs {
+    padding-left: calc(var(--max-padding-size) * 0.125);
+    padding-right: calc(var(--max-padding-size) * 0.125);
+  }
+}

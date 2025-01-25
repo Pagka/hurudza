@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.3",
-    "framer-motion": "^11.2.9",
+    "add": "^2.0.6",
+    "framer-motion": "^11.18.2",
     "geist": "^1.3.0",
+    "git": "^0.1.5",
+    "hurudza": "link:",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
